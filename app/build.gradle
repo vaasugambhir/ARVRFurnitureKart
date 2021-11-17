@@ -1,0 +1,57 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+apply plugin: 'com.google.ar.sceneform.plugin'
+
+// sceneform assets
+sceneform.asset(
+        'sampledata/models/ball.fbx',
+        'default',
+        'sampledata/models/ball.sfa',
+        'src/main/res/raw/ball'
+)
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.vaasugambhir.furniturekart"
+        minSdk 24
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    testImplementation 'junit:junit:'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    // AR dependencies
+    implementation 'com.google.ar:core:1.28.0'
+    implementation "com.google.ar.sceneform.ux:sceneform-ux:1.17.1"
+    implementation "com.google.ar.sceneform:animation:1.17.1"
+}
