@@ -13,6 +13,34 @@ sceneform.asset(
         'src/main/res/raw/ball'
 )
 
+sceneform.asset(
+        'sampledata/models/chair1.fbx',
+        'default',
+        'sampledata/models/chair1.sfa',
+        'src/main/res/raw/chair1'
+)
+
+sceneform.asset(
+        'sampledata/models/chair2.fbx',
+        'default',
+        'sampledata/models/chair2.sfa',
+        'src/main/res/raw/chair2'
+)
+
+sceneform.asset(
+        'sampledata/models/table.fbx',
+        'default',
+        'sampledata/models/table.sfa',
+        'src/main/res/raw/table'
+)
+
+sceneform.asset(
+        'sampledata/models/drawer.fbx',
+        'default',
+        'sampledata/models/drawer.sfa',
+        'src/main/res/raw/drawer'
+)
+
 android {
     compileSdk 31
 
@@ -32,10 +60,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    buildFeatures {
+        viewBinding true
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = '1.8'
     }

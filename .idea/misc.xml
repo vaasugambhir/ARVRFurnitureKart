@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/AndroidNativeProjects/ARFurniture/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidNativeProjects/ARFurniture/app/src/main/res/layout/activity_main.xml" value="0.11270491803278689" />
+        <entry key="..\:/AndroidNativeProjects/ARFurniture/app/src/main/res/layout/fragment_order.xml" value="0.15625" />
+        <entry key="..\:/AndroidNativeProjects/ARFurniture/app/src/main/res/layout/fragment_search.xml" value="0.15625" />
+        <entry key="..\:/AndroidNativeProjects/ARFurniture/app/src/main/res/layout/fragment_shop.xml" value="0.15625" />
+        <entry key="..\:/AndroidNativeProjects/ARFurniture/app/src/main/res/layout/fragment_user.xml" value="0.15625" />
+        <entry key="..\:/AndroidNativeProjects/ARFurniture/app/src/main/res/menu/main_nav.xml" value="0.15625" />
       </map>
     </option>
   </component>

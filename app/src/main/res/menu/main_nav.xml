@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mainNav_shop"
+        android:icon="@drawable/ic_shop"
+        android:title="Shop" />
+    <item
+        android:id="@+id/mainNav_search"
+        android:icon="@drawable/ic_search"
+        android:title="Search" />
+    <item
+        android:id="@+id/mainNav_orders"
+        android:icon="@drawable/ic_orders"
+        android:title="Orders" />
+    <item
+        android:id="@+id/mainNav_user"
+        android:icon="@drawable/ic_user"
+        android:title="Orders" />
+</menu>
