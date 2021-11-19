@@ -110,12 +110,4 @@ class MainActivity : AppCompatActivity() {
         if (actionBarDrawerToggle.onOptionsItemSelected(item)) return true
         return super.onOptionsItemSelected(item)
     }
-
-//    private fun set() {
-//        arFragment = supportFragmentManager.findFragmentById(R.id.fragment_ar) as ArFragment
-//        arFragment.setOnTapArPlaneListener { hitResult, _, _ ->
-//            val anchor = hitResult.createAnchor()
-//            ARHandler.placeObject(arFragment, anchor, R.raw.ball)
-//        }
-//    }
 }

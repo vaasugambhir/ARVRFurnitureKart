@@ -1,18 +1,18 @@
 {
   animations: [
     {
-      path: 'sampledata/models/drawer.fbx',
+      path: 'sampledata/chairs/Chair_4.fbx',
     },
   ],
   materials: [
     {
-      name: 'Free Drawer  textures',
+      name: 'Wood',
       parameters: [
         {
           baseColor: [
-            0.80000000000000004,
-            0.80000000000000004,
-            0.80000000000000004,
+            0.114435,
+            0.088655999999999999,
+            0.056127999999999997,
             1,
           ],
         },
@@ -47,16 +47,14 @@
   model: {
     attributes: [
       'Position',
-      'TexCoord',
       'Orientation',
       'BoneIndices',
       'BoneWeights',
     ],
     collision: {},
-    file: 'sampledata/models/drawer.fbx',
-    name: 'drawer',
+    file: 'sampledata/chairs/Chair_4.fbx',
+    name: 'Chair_4',
     recenter: 'root',
-    scale: 0.41805999999999999,
   },
   version: '0.54:2',
 }

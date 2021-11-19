@@ -1,0 +1,99 @@
+{
+  animations: [
+    {
+      path: 'sampledata/chairs/Couch_L.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'Couch_BeigeDark',
+      parameters: [
+        {
+          baseColor: [
+            0.098502000000000006,
+            0.086724999999999997,
+            0.079356999999999997,
+            1,
+          ],
+        },
+        {
+          baseColorMap: null,
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'Couch_Beige',
+      parameters: [
+        {
+          baseColor: [
+            0.15743099999999999,
+            0.137351,
+            0.12550700000000001,
+            1,
+          ],
+        },
+        {
+          baseColorMap: null,
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/chairs/Couch_L.fbx',
+    name: 'Couch_L',
+    recenter: 'root',
+    scale: 0.44221899999999997,
+  },
+  version: '0.54:2',
+}

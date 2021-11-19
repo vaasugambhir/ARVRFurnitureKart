@@ -1,24 +1,18 @@
 {
   animations: [
     {
-      clips: [
-        {
-          name: 'Take 001',
-          runtime_name: 'chair2',
-        },
-      ],
-      path: 'sampledata/models/chair2.fbx',
+      path: 'sampledata/wardrobes/Closet.fbx',
     },
   ],
   materials: [
     {
-      name: 'Material #0',
+      name: 'DarkWood',
       parameters: [
         {
           baseColor: [
-            0.5,
-            0.5,
-            0.5,
+            0.13286100000000001,
+            0.080632999999999996,
+            0.038973000000000001,
             1,
           ],
         },
@@ -38,7 +32,7 @@
           metallicMap: null,
         },
         {
-          roughness: 0,
+          roughness: 1,
         },
         {
           roughnessMap: null,
@@ -50,13 +44,13 @@
       source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
     },
     {
-      name: 'Material #2',
+      name: 'Metal',
       parameters: [
         {
           baseColor: [
-            0.5,
-            0.5,
-            0.5,
+            0.30498700000000001,
+            0.238398,
+            0.08022,
             1,
           ],
         },
@@ -76,7 +70,7 @@
           metallicMap: null,
         },
         {
-          roughness: 0.64600000000000002,
+          roughness: 1,
         },
         {
           roughnessMap: null,
@@ -88,13 +82,13 @@
       source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
     },
     {
-      name: 'Material #1',
+      name: 'Wood',
       parameters: [
         {
           baseColor: [
-            1,
-            1,
-            1,
+            0.17885899999999999,
+            0.107585,
+            0.051126999999999999,
             1,
           ],
         },
@@ -114,7 +108,7 @@
           metallicMap: null,
         },
         {
-          roughness: 0,
+          roughness: 1,
         },
         {
           roughnessMap: null,
@@ -129,16 +123,14 @@
   model: {
     attributes: [
       'Position',
-      'TexCoord',
       'Orientation',
       'BoneIndices',
       'BoneWeights',
     ],
     collision: {},
-    file: 'sampledata/models/chair2.fbx',
-    name: 'chair2',
+    file: 'sampledata/wardrobes/Closet.fbx',
+    name: 'Closet',
     recenter: 'root',
-    scale: 0.0098490000000000001,
   },
   version: '0.54:2',
 }

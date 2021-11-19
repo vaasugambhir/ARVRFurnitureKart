@@ -1,18 +1,18 @@
 {
   animations: [
     {
-      path: 'sampledata/models/table.fbx',
+      path: 'sampledata/beds/Bed_Single.fbx',
     },
   ],
   materials: [
     {
-      name: 'Material',
+      name: 'White',
       parameters: [
         {
           baseColor: [
-            1,
-            1,
-            1,
+            0.44797500000000001,
+            0.44329099999999999,
+            0.42940800000000001,
             1,
           ],
         },
@@ -44,13 +44,13 @@
       source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
     },
     {
-      name: 'Material.001',
+      name: 'Red',
       parameters: [
         {
           baseColor: [
-            0.80000000000000004,
-            0.80000000000000004,
-            0.80000000000000004,
+            0.15742999999999999,
+            0.051742999999999997,
+            0.033753999999999999,
             1,
           ],
         },
@@ -82,13 +82,13 @@
       source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
     },
     {
-      name: 'Material.003',
+      name: 'Wood',
       parameters: [
         {
           baseColor: [
-            0.80000000000000004,
-            0.80000000000000004,
-            0.80000000000000004,
+            0.114435,
+            0.088655999999999999,
+            0.056127999999999997,
             1,
           ],
         },
@@ -120,13 +120,51 @@
       source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
     },
     {
-      name: 'Material.002',
+      name: 'Grey',
       parameters: [
         {
           baseColor: [
+            0.259795,
+            0.25713200000000003,
+            0.24923999999999999,
             1,
-            1,
-            1,
+          ],
+        },
+        {
+          baseColorMap: null,
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'DarkRed',
+      parameters: [
+        {
+          baseColor: [
+            0.10247100000000001,
+            0.034876999999999998,
+            0.023168000000000001,
             1,
           ],
         },
@@ -161,16 +199,15 @@
   model: {
     attributes: [
       'Position',
-      'TexCoord',
       'Orientation',
       'BoneIndices',
       'BoneWeights',
     ],
     collision: {},
-    file: 'sampledata/models/table.fbx',
-    name: 'table',
+    file: 'sampledata/beds/Bed_Single.fbx',
+    name: 'Bed_Single',
     recenter: 'root',
-    scale: 0.78514200000000001,
+    scale: 0.73823899999999998,
   },
   version: '0.54:2',
 }

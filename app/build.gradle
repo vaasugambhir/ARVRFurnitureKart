@@ -6,39 +6,132 @@ plugins {
 apply plugin: 'com.google.ar.sceneform.plugin'
 
 // sceneform assets
+// BEDS
 sceneform.asset(
-        'sampledata/models/ball.fbx',
+        'sampledata/beds/Bed.obj',
         'default',
-        'sampledata/models/ball.sfa',
-        'src/main/res/raw/ball'
+        'sampledata/beds/Bed.sfa',
+        'src/main/res/raw/bed1'
+)
+sceneform.asset(
+        'sampledata/beds/Bed_01.obj',
+        'default',
+        'sampledata/beds/Bed_01.sfa',
+        'src/main/res/raw/bed2'
+)
+sceneform.asset(
+        'sampledata/beds/Bed_Bunk.fbx',
+        'default',
+        'sampledata/beds/Bed_Bunk.sfa',
+        'src/main/res/raw/bed3'
+)
+sceneform.asset(
+        'sampledata/beds/Bed_Single.fbx',
+        'default',
+        'sampledata/beds/Bed_Single.sfa',
+        'src/main/res/raw/bed4'
+)
+sceneform.asset(
+        'sampledata/beds/Bedroom.obj',
+        'default',
+        'sampledata/beds/Bedroom.sfa',
+        'src/main/res/raw/bed5'
 )
 
+// CHAIRS
 sceneform.asset(
-        'sampledata/models/chair1.fbx',
+        'sampledata/chairs/Chair.obj',
         'default',
-        'sampledata/models/chair1.sfa',
+        'sampledata/chairs/Chair.sfa',
         'src/main/res/raw/chair1'
 )
-
 sceneform.asset(
-        'sampledata/models/chair2.fbx',
+        'sampledata/chairs/Chair_4.fbx',
         'default',
-        'sampledata/models/chair2.sfa',
+        'sampledata/chairs/Chair_4.sfa',
         'src/main/res/raw/chair2'
 )
-
 sceneform.asset(
-        'sampledata/models/table.fbx',
+        'sampledata/chairs/Couch_L.fbx',
         'default',
-        'sampledata/models/table.sfa',
-        'src/main/res/raw/table'
+        'sampledata/chairs/Couch_L.sfa',
+        'src/main/res/raw/chair3'
+)
+sceneform.asset(
+        'sampledata/chairs/Couch_Medium2.fbx',
+        'default',
+        'sampledata/chairs/Couch_Medium2.sfa',
+        'src/main/res/raw/chair4'
+)
+sceneform.asset(
+        'sampledata/chairs/Couch_Small1.fbx',
+        'default',
+        'sampledata/chairs/Couch_Small1.sfa',
+        'src/main/res/raw/chair5'
 )
 
+// TABLES
 sceneform.asset(
-        'sampledata/models/drawer.fbx',
+        'sampledata/tables/Desk.obj',
         'default',
-        'sampledata/models/drawer.sfa',
-        'src/main/res/raw/drawer'
+        'sampledata/tables/Desk.sfa',
+        'src/main/res/raw/table1'
+)
+sceneform.asset(
+        'sampledata/tables/Table.fbx',
+        'default',
+        'sampledata/tables/Table.sfa',
+        'src/main/res/raw/table2'
+)
+sceneform.asset(
+        'sampledata/tables/table.obj',
+        'default',
+        'sampledata/tables/table.sfa',
+        'src/main/res/raw/table3'
+)
+sceneform.asset(
+        'sampledata/tables/Table_Large_Circular_01.obj',
+        'default',
+        'sampledata/tables/Table_Large_Circular_01.sfa',
+        'src/main/res/raw/table4'
+)
+sceneform.asset(
+        'sampledata/tables/Table_Large_Rectangular_01.obj',
+        'default',
+        'sampledata/tables/Table_Large_Rectangular_01.sfa',
+        'src/main/res/raw/table5'
+)
+
+// WARDROBES
+sceneform.asset(
+        'sampledata/wardrobes/Armoire.obj',
+        'default',
+        'sampledata/wardrobes/Armoire.sfa',
+        'src/main/res/raw/wardrobe1'
+)
+sceneform.asset(
+        'sampledata/wardrobes/Closet.fbx',
+        'default',
+        'sampledata/wardrobes/Closet.sfa',
+        'src/main/res/raw/wardrobe2'
+)
+sceneform.asset(
+        'sampledata/wardrobes/model.obj',
+        'default',
+        'sampledata/wardrobes/model.sfa',
+        'src/main/res/raw/wardrobe3'
+)
+sceneform.asset(
+        'sampledata/wardrobes/model1.obj',
+        'default',
+        'sampledata/wardrobes/model1.sfa',
+        'src/main/res/raw/wardrobe4'
+)
+sceneform.asset(
+        'sampledata/wardrobes/SM_Closet_02.obj',
+        'default',
+        'sampledata/wardrobes/SM_Closet_02.sfa',
+        'src/main/res/raw/wardrobe5'
 )
 
 android {
