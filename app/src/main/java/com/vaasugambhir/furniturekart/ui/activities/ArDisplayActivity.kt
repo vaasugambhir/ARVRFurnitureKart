@@ -6,6 +6,7 @@ import com.google.ar.sceneform.ux.ArFragment
 import com.vaasugambhir.furniturekart.R
 import com.vaasugambhir.furniturekart.data.ARHandler
 import com.vaasugambhir.furniturekart.databinding.ActivityArDisplayBinding
+import com.vaasugambhir.furniturekart.utils.Utils
 
 class ArDisplayActivity : AppCompatActivity() {
     private lateinit var binding: ActivityArDisplayBinding
@@ -17,15 +18,17 @@ class ArDisplayActivity : AppCompatActivity() {
         binding = ActivityArDisplayBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val value = intent.extras!!.getInt(Utils.AR_INTENT)
+
         arHandler = ARHandler()
-        set()
+        set(value)
     }
 
-    private fun set() {
+    private fun set(raw: Int) {
         arFragment = supportFragmentManager.findFragmentById(R.id.fragment_ar) as ArFragment
         arFragment.setOnTapArPlaneListener { hitResult, _, _ ->
             val anchor = hitResult.createAnchor()
-            arHandler.placeObject(arFragment, anchor, R.raw.wardrobe1)
+            arHandler.placeObject(arFragment, anchor, raw)
         }
     }
 }
