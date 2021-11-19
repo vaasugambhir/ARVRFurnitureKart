@@ -2,6 +2,7 @@ package com.vaasugambhir.furniturekart.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
@@ -22,6 +23,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var userFragment: UserFragment
     private lateinit var searchFragment: SearchFragment
 
+    private var isShop = true
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -36,24 +39,28 @@ class MainActivity : AppCompatActivity() {
         binding.sideNav.setNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.mainNav_search -> {
+                    isShop = false
                     setCurrentFragment(searchFragment)
                     closeDrawer()
                     println("Search")
                     return@setNavigationItemSelectedListener true
                 }
                 R.id.mainNav_orders -> {
+                    isShop = false
                     setCurrentFragment(ordersFragment)
                     closeDrawer()
                     println("Orders")
                     return@setNavigationItemSelectedListener true
                 }
                 R.id.mainNav_shop -> {
+                    isShop = true
                     setCurrentFragment(shopFragment)
                     closeDrawer()
                     println("Shop")
                     return@setNavigationItemSelectedListener true
                 }
                 R.id.mainNav_user -> {
+                    isShop = false
                     setCurrentFragment(userFragment)
                     closeDrawer()
                     println("User")
@@ -91,7 +98,17 @@ class MainActivity : AppCompatActivity() {
 
     private fun closeDrawer() {
         if (binding.mainDrawerLayout.isDrawerOpen(GravityCompat.START))
-            binding.mainDrawerLayout.closeDrawer(GravityCompat.END)
+            binding.mainDrawerLayout.closeDrawer(GravityCompat.START)
+    }
+
+    override fun onBackPressed() {
+        if (isShop) super.onBackPressed()
+        else setCurrentFragment(shopFragment)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (actionBarDrawerToggle.onOptionsItemSelected(item)) return true
+        return super.onOptionsItemSelected(item)
     }
 
 //    private fun set() {
