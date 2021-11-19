@@ -8,10 +8,7 @@ import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import com.vaasugambhir.furniturekart.R
 import com.vaasugambhir.furniturekart.databinding.ActivityMainBinding
-import com.vaasugambhir.furniturekart.ui.fragments.OrdersFragment
-import com.vaasugambhir.furniturekart.ui.fragments.SearchFragment
-import com.vaasugambhir.furniturekart.ui.fragments.ShopFragment
-import com.vaasugambhir.furniturekart.ui.fragments.UserFragment
+import com.vaasugambhir.furniturekart.ui.fragments.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var shopFragment: ShopFragment
     private lateinit var userFragment: UserFragment
     private lateinit var searchFragment: SearchFragment
-
+    private lateinit var settingsFragment: SettingsFragment
     private var isShop = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -66,6 +63,13 @@ class MainActivity : AppCompatActivity() {
                     println("User")
                     return@setNavigationItemSelectedListener true
                 }
+                R.id.mainNav_setting -> {
+                    isShop = false
+                    setCurrentFragment(settingsFragment)
+                    closeDrawer()
+                    println("Settings")
+                    return@setNavigationItemSelectedListener true
+                }
                 else -> {return@setNavigationItemSelectedListener false}
             }
         }
@@ -88,6 +92,7 @@ class MainActivity : AppCompatActivity() {
         shopFragment = ShopFragment()
         userFragment = UserFragment()
         searchFragment = SearchFragment()
+        settingsFragment = SettingsFragment()
     }
 
     private fun setCurrentFragment(fragment: Fragment) {

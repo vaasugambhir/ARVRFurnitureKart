@@ -1,19 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:id="@+id/mainNav_shop"
-        android:icon="@drawable/ic_shop"
-        android:title="@string/shop" />
-    <item
-        android:id="@+id/mainNav_search"
-        android:icon="@drawable/ic_search"
-        android:title="@string/search" />
-    <item
-        android:id="@+id/mainNav_orders"
-        android:icon="@drawable/ic_orders"
-        android:title="@string/orders" />
-    <item
-        android:id="@+id/mainNav_user"
-        android:icon="@drawable/ic_user"
-        android:title="@string/account" />
+
+    <item android:title="Explore">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/mainNav_shop"
+                    android:icon="@drawable/ic_shop"
+                    android:title="@string/shop" />
+                <item
+                    android:id="@+id/mainNav_search"
+                    android:icon="@drawable/ic_search"
+                    android:title="@string/search" />
+                <item
+                    android:id="@+id/mainNav_orders"
+                    android:icon="@drawable/ic_orders"
+                    android:title="@string/orders" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="You">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/mainNav_user"
+                    android:icon="@drawable/ic_user"
+                    android:title="@string/account" />
+                <item
+                    android:id="@+id/mainNav_setting"
+                    android:icon="@drawable/ic_settings"
+                    android:title="Settings" />
+            </group>
+        </menu>
+    </item>
 </menu>

@@ -8,7 +8,7 @@
 
     <androidx.cardview.widget.CardView
         app:cardCornerRadius="20dp"
-        android:background="@color/cardview_dark_background"
+        app:cardBackgroundColor="#CACACA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -28,6 +28,7 @@
 
             <TextView
                 android:layout_weight="2"
+                android:textColor="@color/black"
                 android:layout_marginHorizontal="10dp"
                 android:id="@+id/itemOrder_name"
                 android:layout_width="wrap_content"
@@ -38,6 +39,7 @@
             <Button
                 android:id="@+id/itemOrder_delete"
                 android:text="cancel"
+                style="@style/Widget.AppCompat.Button"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
