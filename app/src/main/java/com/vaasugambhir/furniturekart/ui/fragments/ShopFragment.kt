@@ -25,7 +25,7 @@ class ShopFragment: Fragment() {
     private lateinit var adapter: ProductAdapter
     private lateinit var viewModel: ProductViewModel
     private lateinit var alert: ConfirmDialog
-    private val timer = object : CountDownTimer(1000,1000) {
+    private val timer = object : CountDownTimer(2000,2000) {
         override fun onTick(p0: Long) {}
 
         override fun onFinish() {
