@@ -2,6 +2,7 @@ package com.vaasugambhir.furniturekart.ui.fragments
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,6 +14,7 @@ import com.vaasugambhir.furniturekart.data.room.ProductEntity
 import com.vaasugambhir.furniturekart.databinding.FragmentShopBinding
 import com.vaasugambhir.furniturekart.ui.activities.ArDisplayActivity
 import com.vaasugambhir.furniturekart.ui.adapter.ProductAdapter
+import com.vaasugambhir.furniturekart.ui.dialog.ConfirmDialog
 import com.vaasugambhir.furniturekart.ui.interfaces.OnProductClickListener
 import com.vaasugambhir.furniturekart.utils.Utils
 import com.vaasugambhir.furniturekart.viewmodel.ProductVMFactory
@@ -22,6 +24,15 @@ class ShopFragment: Fragment() {
     private lateinit var binding: FragmentShopBinding
     private lateinit var adapter: ProductAdapter
     private lateinit var viewModel: ProductViewModel
+    private lateinit var alert: ConfirmDialog
+    private val timer = object : CountDownTimer(1000,1000) {
+        override fun onTick(p0: Long) {}
+
+        override fun onFinish() {
+            alert.dismissDialog()
+        }
+
+    }
 
     private val array: List<ProductEntity> = listOf(
         ProductEntity("1", R.drawable.bed1p, R.raw.bed1, "Bed 1"),
@@ -59,6 +70,7 @@ class ShopFragment: Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        alert = ConfirmDialog(requireActivity())
         setOnClickListeners()
     }
 
@@ -82,6 +94,8 @@ class ShopFragment: Fragment() {
 
             override fun onOrderClick(product: ProductEntity) {
                 viewModel.insert(product)
+                alert.startLoading()
+                timer.start()
             }
         })
         binding.productsRV.adapter = adapter

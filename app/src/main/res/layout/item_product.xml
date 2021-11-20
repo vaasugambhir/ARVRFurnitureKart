@@ -7,12 +7,12 @@
     android:foreground="?attr/selectableItemBackground">
 
     <androidx.cardview.widget.CardView
-        app:cardCornerRadius="20dp"
+        android:id="@+id/product_CV"
         app:cardBackgroundColor="#CACACA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="10dp"
-        android:elevation="20dp">
+        android:elevation="50dp">
 
         <LinearLayout
             android:id="@+id/LL_background"
@@ -22,15 +22,6 @@
             android:gravity="center_horizontal"
             android:layout_marginVertical="10dp">
 
-            <ImageView
-                android:src="@drawable/ic_launcher_background"
-                android:id="@+id/itemProduct_image"
-                android:layout_width="match_parent"
-                android:layout_marginHorizontal="10dp"
-                android:layout_height="200dp"
-                android:scaleType="centerCrop"
-                android:layout_marginVertical="10dp"/>
-
             <TextView
                 android:layout_marginVertical="10dp"
                 android:id="@+id/itemProduct_name"
@@ -39,6 +30,15 @@
                 android:textColor="@color/black"
                 android:text="Product Name"
                 android:textSize="20sp"/>
+
+            <ImageView
+                android:src="@drawable/ic_launcher_background"
+                android:id="@+id/itemProduct_image"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_marginVertical="10dp"/>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/itemProduct_order"

@@ -197,4 +197,8 @@ dependencies {
     api "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0"
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
+
+    // Lottie files
+    def lottieVersion = "3.4.0"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
 }

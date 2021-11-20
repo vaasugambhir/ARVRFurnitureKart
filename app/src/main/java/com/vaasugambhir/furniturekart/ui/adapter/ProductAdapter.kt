@@ -4,10 +4,9 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.LinearLayout
-import android.widget.TextView
+import android.view.animation.AnimationUtils
+import android.widget.*
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
@@ -20,21 +19,20 @@ class ProductAdapter(private val context: Context, private val isOrders: Boolean
 
     private lateinit var listener: OnProductClickListener
 
-    fun setOnClickListeners(l: OnProductClickListener) {
-        listener = l
-    }
+    fun setOnClickListeners(l: OnProductClickListener) { listener = l }
 
     inner class ProductItemHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bindOrders(product: ProductEntity) {
             val image: ImageView = itemView.findViewById(R.id.itemOrder_image)
             val name: TextView = itemView.findViewById(R.id.itemOrder_name)
             val delete: Button = itemView.findViewById(R.id.itemOrder_delete)
+            val cv: CardView = itemView.findViewById(R.id.order_CV)
 
             image.setImageResource(product.imageRaw)
             name.text = product.name
-            delete.setOnClickListener {
-                listener.onDeleteClick(product)
-            }
+            delete.setOnClickListener { listener.onDeleteClick(product) }
+            val animation = AnimationUtils.loadAnimation(context, R.anim.fall_down)
+            cv.startAnimation(animation)
         }
 
         fun bindItems(product: ProductEntity) {
@@ -42,10 +40,16 @@ class ProductAdapter(private val context: Context, private val isOrders: Boolean
             val name: TextView = itemView.findViewById(R.id.itemProduct_name)
             val order: Button = itemView.findViewById(R.id.itemProduct_order)
             val bg: LinearLayout = itemView.findViewById(R.id.LL_background)
+            val cv: CardView = itemView.findViewById(R.id.product_CV)
 
             image.setImageResource(product.imageRaw)
             name.text = product.name
-            order.setOnClickListener { listener.onOrderClick(product) }
+            val animation = AnimationUtils.loadAnimation(context, R.anim.fall_down)
+            cv.startAnimation(animation)
+            order.setOnClickListener {
+                listener.onOrderClick(product)
+                Toast.makeText(context, "${product.name} is getting ready to be shipped!", Toast.LENGTH_SHORT).show()
+            }
             bg.setOnClickListener { listener.onProductClick(product) }
         }
     }
