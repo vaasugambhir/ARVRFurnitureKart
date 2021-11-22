@@ -103,10 +103,10 @@
 
 ### VR
 
-[![ScreenShot]](images/vr1.jpg)
-[![ScreenShot]](images/vr2.jpg)
-[![ScreenShot]](images/vr3.jpg)
-[![ScreenShot]](images/vfr4.jpg)
+![ScreenShot](images/vr1.jpg)
+![ScreenShot](images/vr2.jpg)
+![ScreenShot](images/vr3.jpg)
+![ScreenShot](images/vr4.jpg)
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
