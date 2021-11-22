@@ -98,8 +98,8 @@
 
 ### AR
 
-[![ScreenShot]](images/app1.png)
-[![ScreenShot]](images/app2.png)
+![ScreenShot](images/app1.png)
+![ScreenShot](images/app2.png)
 
 ### VR
 
