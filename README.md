@@ -1,4 +1,3 @@
-# ARVR Furniture Kart
 <div id="top"></div>
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -60,9 +59,8 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-
+[![Product Name Screen Shot][product-screenshot]]
+[![Product Flow Screen Shot]](images/flow.png)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -79,33 +77,17 @@
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-
-- npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/Vaasuawesome7/ARVRFurnitureKart.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = "ENTER YOUR API";
-   ```
+2. Open Android Studio and open a project from Version Control.
+
+3. Paste the URL and store it on a folder of your choice
+
+4. Let the Gradle get synced and switch the branch to AR-app
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -113,22 +95,19 @@ This is an example of how to list things you need to use the software and how to
 
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+### AR
+
+[![ScreenShot]](images/app1.png)
+[![ScreenShot]](images/app2.png)
+
+### VR
+
+[![ScreenShot]](images/vr1.png)
+[![ScreenShot]](images/vr2.png)
+[![ScreenShot]](images/vr3.png)
+[![ScreenShot]](images/vfr4.png)
 
 _For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- ROADMAP -->
-
-## Roadmap
-
-- [] Feature 1
-- [] Feature 2
-- [] Feature 3
-  - [] Nested Feature
-
-See the [open issues](https://github.com/Vaasuawesome7/ARVRFurnitureKart/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -167,16 +146,6 @@ Project Link: [https://github.com/Vaasuawesome7/ARVRFurnitureKart](https://githu
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGMENTS -->
-
-## Acknowledgments
-
-- []()
-- []()
-- []()
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
@@ -191,4 +160,4 @@ Project Link: [https://github.com/Vaasuawesome7/ARVRFurnitureKart](https://githu
 [license-shield]: https://img.shields.io/github/license/Vaasuawesome7/ARVRFurnitureKart.svg?style=for-the-badge
 [license-url]: https://github.com/Vaasuawesome7/ARVRFurnitureKart/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[product-screenshot]: images/main.png
+[product-screenshot]: images/screenshot.png
