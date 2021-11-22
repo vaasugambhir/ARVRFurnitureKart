@@ -21,7 +21,7 @@
     <a href="https://github.com/Vaasuawesome7/ARVRFurnitureKart"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Vaasuawesome7/ARVRFurnitureKart">View Demo</a>
+    <a href="https://youtu.be/MAuzC5ZtdZg">View Demo</a>
     ·
     <a href="https://github.com/Vaasuawesome7/ARVRFurnitureKart/issues">Report Bug</a>
     ·
@@ -98,15 +98,15 @@
 
 ### AR
 
-![ScreenShot](images/app1.png)
-![ScreenShot](images/app2.png)
+![ScreenShot](images/app1.jpg)
+![ScreenShot](images/app2.jpg)
 
 ### VR
 
-[![ScreenShot]](images/vr1.png)
-[![ScreenShot]](images/vr2.png)
-[![ScreenShot]](images/vr3.png)
-[![ScreenShot]](images/vfr4.png)
+![ScreenShot](images/vr1.jpg)
+![ScreenShot](images/vr2.jpg)
+![ScreenShot](images/vr3.jpg)
+![ScreenShot](images/vfr4.jpg)
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
