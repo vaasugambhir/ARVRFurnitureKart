@@ -99,7 +99,7 @@ In addition to this we also have an AR app , which allows the user to place a pr
 
 <!-- USAGE EXAMPLES -->
 
-## Usage
+## Screenshots
 
 ### AR
 
@@ -111,7 +111,7 @@ In addition to this we also have an AR app , which allows the user to place a pr
 ![ScreenShot](images/vr1.jpg)
 ![ScreenShot](images/vr2.jpg)
 ![ScreenShot](images/vr3.jpg)
-![ScreenShot](images/vfr4.jpg)
+![ScreenShot](images/vr4.jpg)
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
