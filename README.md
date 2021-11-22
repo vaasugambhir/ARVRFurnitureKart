@@ -98,15 +98,15 @@
 
 ### AR
 
-![ScreenShot](images/app1.jpg)
-![ScreenShot](images/app2.jpg)
+![ScreenShot](images/app1.png)
+![ScreenShot](images/app2.png)
 
 ### VR
 
-![ScreenShot](images/vr1.jpg)
-![ScreenShot](images/vr2.jpg)
-![ScreenShot](images/vr3.jpg)
-![ScreenShot](images/vr4.jpg)
+[![ScreenShot]](images/vr1.png)
+[![ScreenShot]](images/vr2.png)
+[![ScreenShot]](images/vr3.png)
+[![ScreenShot]](images/vfr4.png)
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
@@ -159,7 +159,7 @@ Project Link: [https://github.com/Vaasuawesome7/ARVRFurnitureKart](https://githu
 [issues-shield]: https://img.shields.io/github/issues/Vaasuawesome7/ARVRFurnitureKart.svg?style=for-the-badge
 [issues-url]: https://github.com/Vaasuawesome7/ARVRFurnitureKart/issues
 [license-shield]: https://img.shields.io/github/license/Vaasuawesome7/ARVRFurnitureKart.svg?style=for-the-badge
-[license-url]: https://github.com/Vaasuawesome7/ARVRFurnitureKart/blob/master/LICENSE.txt
+[license-url]: https://github.com/Vaasuawesome7/ARVRFurnitureKart/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [product-screenshot]: images/main.png
 [product-flow]: images/flow.png
