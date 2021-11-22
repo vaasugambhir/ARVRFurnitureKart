@@ -98,15 +98,15 @@
 
 ### AR
 
-![ScreenShot](images/app1.png)
-![ScreenShot](images/app2.png)
+![ScreenShot](images/app1.jpg)
+![ScreenShot](images/app2.jpg)
 
 ### VR
 
-[![ScreenShot]](images/vr1.png)
-[![ScreenShot]](images/vr2.png)
-[![ScreenShot]](images/vr3.png)
-[![ScreenShot]](images/vfr4.png)
+[![ScreenShot]](images/vr1.jpg)
+[![ScreenShot]](images/vr2.jpg)
+[![ScreenShot]](images/vr3.jpg)
+[![ScreenShot]](images/vfr4.jpg)
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
