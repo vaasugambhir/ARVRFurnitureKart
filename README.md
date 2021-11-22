@@ -63,6 +63,10 @@
 
 [![Product Flow Screen Shot][product-flow]](https://example.com)
 
+While most online shopping platforms are websites or applications there are few platforms which recreate the actual shopping experience through VR. 
+Our platform takes it one step further and not only models the shop environment exactly as in reality right from store arrangement based on different product categories all the way up to online billing , but also has additional features such as personal shopping assistant that can point to useful links online , audio to provide information about products being browsed.
+
+In addition to this we also have an AR app , which allows the user to place a product they have chosen in pictures of their home taken through a camera to help them make better choices. 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
